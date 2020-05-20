@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "test": "jest"
+    "test": "cucumber-js -f node_modules/cucumber-pretty"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -14,6 +14,9 @@
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
+    "cucumber": "^6.0.5",
+    "cucumber-pretty": "^6.0.0",
+    "hamjest": "^3.5.0",
     "jest": "^25.2.7",
     "supertest": "^4.0.2"
   }
